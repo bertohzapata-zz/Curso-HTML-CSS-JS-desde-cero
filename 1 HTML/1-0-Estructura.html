@@ -1,0 +1,33 @@
+<!-- La estructura básica de un documento html conta de los siguientes elementos -->
+
+
+<!DOCTYPE html>
+<!-- Es la declaración que indica que el documento será de algún tipo, en este caso HTMl. Antes existian otras formas de mostrar páginas web y se decidió como estandar identificar una pagina web con el tipo HTML, por eso la existencia de esta linea-->
+
+<html lang="en">
+<!-- La etiqueta html indica la estructura principal del documento, hay tomar en cuenta que el navegador reconoce el archivo como una estructura de árbol, la etiqueta html es la raiz y desde aquí se derivan el resto de etiquetas que conformarán todo el documento.
+En este caso lleva un artibuto que indica el lenguaje del documento -->
+
+<head>
+<!-- Esta etiqueta es una cabecera invisible al cliente que indica las propiedades especiales (metadatos) como el titulo, la descripción y el resto de los elementos que hacen funcionar la página web, que no se representan visualmente en el navegador por si mismos -->
+    <meta charset="UTF-8">
+    <!-- una etiqueta meta para indicar la codificacion de caracteres que se utilizan, el estandar acual es UTF-8 y se recomienda ubicarla justo despues de la etiqueta head -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- esta etiqueta meta se basa en el viewport o el área visible de la página web del usuario dependiendo de su dispositivo.
+        Indica especificmente el reacondicionamiento de la pantalla con un ancho y una escala de zoom predeterminado segun el dispositivo
+        De esta manera al entrar en un telefono o tablet, la página web no se verá como en una pantalla de computadora, sino que el contenido se adaptará a las dimensiones de su propia pantalla.
+        La diferencia se nota mejor en el sig enlace: https://www.w3schools.com/css/css_rwd_viewport.asp-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Esto indica la compatibilidad con el navegador de microsoft edge -->
+    <title>Document</title>
+    <!-- el titulo del documento que se mostrará en la pestaña del navegador -->
+</head>
+
+<!-- La etiqueta body es otra de las mas importantes porque aquí es donde se va a construir todo el contenido visible para el usuario de una manera ordenada y coherente. Todas las imagenes, títulos, parrafos, secciones, incluso los enlaces al código de Javascript van aquí -->
+<body>
+    
+</body>
+</html>
+
+
+<!-- La mayoría de las etiqutas tienes su propia etiqueta de cierre por lo debes ser cuidadoso y organizar bien la estructura del documento -->
