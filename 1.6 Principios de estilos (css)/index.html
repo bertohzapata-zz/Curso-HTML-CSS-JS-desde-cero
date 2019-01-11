@@ -1,0 +1,57 @@
+<!-- En la programación y desarrollo web existen muchas alternativas para llegar al mismo resultado y resolver un problema. Parte de tu trabajo es aprender la ruta mas optimizada y es presizamente lo que te mostraré aquí -->
+
+<!-- Los estilos css (cascade style sheet) inyectan la personalidad a nustro sitio web o aplicación por medio de reglas ya establecidas. Incluso aunque nosotros no escribamos estás reglas, cada etiqueta ya viene con un conjunto de estas reglas precargadas, nuetra tarea con css es mejorar visualmete el contenido para hacerlo ver mas atractivo-->
+
+<!-- ¿Cómo funciona?-->
+<!-- funciona casi de la misma forma que agregar atributos a las etiquetas css:
+            propiedad="valor"
+
+     con la difrencia que aquí hay que tomar en cuenta la etiqueta a la que se le hará el cambio:
+    
+            etiqueta { propiedad: valor }
+         
+     como te das cuenta solo cambian un tes cosas:
+
+        - Las llaves de apertura y cierre para demilitar la cantidad de estilos 
+        - El cambio del signo = por dos puntos :
+        - El nombre de la etiqueta antes de todo -->
+
+<!-- ¿Dónde se usa? -->
+<!-- Una de las formas mas sencillas pero, no para nada la mejor opción es dentro del mismo archivo HTML dentro del head por medio de la etiqueta style
+
+    -Ventajas vs desventajas
+-->
+
+<!-- Otra forma rápida que no es muy aconsejable, pero que funciona como el resto de las opciones es, dentro la misma etiqueta usar su atributo style. Todas los tienen  -->
+
+<!-- Otra forma mas apropiada es haciendo referencia a un archivo exclusivo para las reglas de estilo y se conecta desde el head por medio de la etiqueta link como se muestra abajo-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estilos css</title>
+
+    <!-- opción 1 -->
+    <!-- <style>
+        h1 { color:brown;}
+    </style> -->
+
+
+    <!-- opción 3 -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- opción 1 -->
+    <!-- <h1>Hola mamá estoy en la web</h1> -->
+
+
+    <!-- opción 2 -->
+    <!-- <h1 style="font-size: 50px; color:crimson;">Esto es fácil</h1> -->
+
+    <h1>Esto es mucho mas cómodo :3</h1>
+</body>
+</html>
