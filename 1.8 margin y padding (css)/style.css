@@ -1,0 +1,61 @@
+/* *****PRIMERO EXPLICA EL MARGEN PASO A PASO Y LUEGO EL PADDING***** */
+
+/* Los márgenes son una forma de espaciar tus elementos HTML contra otros, esto se nota mas cuando rellenas el fondo de tu elemento con un color  */
+
+/* MARGIN y PADDING*/
+/* Con css tu tienes el control de los margenes internos y externos, y como hablamos de un canvas o lienzo en 2d, tienes cuatro direcciones para aplicar cambios
+
+    - margin / padding: top
+    - margin / padding: right
+    - margin / padding: bottom
+    - margin / padding: left
+
+Por otro lado cada una de estas propiedades pueden contener diferentes tipos de valores:
+
+    - auto - el navegador asigna el margen automaticamente
+    - length - se expecifica el valor en una medida como px, pt, em, rem, cm.
+    - % - se representa por un porcentaje dependiendo del 100% de ancho del elemento que lo contiene, el navegaor realiza el cálculo
+    - inherit - hereda el valor de su contenedor padre
+
+Puedes combinar los márgenes:
+
+    - todos por separado
+    - todos del mismo valor
+    - top-bottm y right left
+    - top, right, bottom, left
+
+
+    La diferencia entre uno y otro es que el margin aplica el margen de separación fuera del contenido del elemento. Por otro lado el padding aplica un margen interior dentro del elemento. Ambos con la misma finalidad pero su efecto se visualiza en diferentes áreas de tu elemento
+ */
+
+.ironman {
+    color: gold;
+    background-color: crimson;
+    /* margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px; */
+
+    /* margin: 50px; */
+
+    /* margin: 50px 25px; */
+
+    margin: 50px 60px 10px 70px;
+
+}
+
+.hulk{
+    color: #5E466C;
+    background: #7EA14A;
+    /* padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 150px;
+    padding-left: 80px; */
+
+    /* padding: 50px; */
+
+    /* padding: 50px 25px; */
+
+    padding: 50px 60px 10px 70px;
+
+}
