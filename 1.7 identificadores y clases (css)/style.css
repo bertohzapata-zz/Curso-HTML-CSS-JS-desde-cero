@@ -1,0 +1,33 @@
+/* Conexión con identificadores */
+#titulo {
+    background: brown;
+    color: burlywood;
+    font-size: 70px;
+}
+
+
+
+/* Conexión con clases */
+
+
+.videojuegos {
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.fornite {
+    background: #611DB2;
+    color: white;
+}
+
+.pubg {
+    background: #171717;
+    color: #A55D09;
+}
+
+.cod {
+    background: #000000;
+    color: #EB6820;
+}

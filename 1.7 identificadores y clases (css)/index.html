@@ -1,0 +1,39 @@
+<!-- ¿Qué pasa cuando queremos aplicar diferentes estilos a múltiples etiquetas del mismo tipo?
+Si ya te pusiste a pensar en esto, te felicito porque vas por buen camino al trabajar tu lógica,
+si no, no te preocupes continua el curso y verás que este comportamiento se manifestará continuamente -->
+
+<!-- Suponiendo que tenemos diferentes elementos de la misma etiqueta en el documento, podemos cambiar sus propiedades de estilo de dos maneras:
+    - por el atributo identificador:  id
+    - por el atributo clase:          class
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Identificadores y clases</title>
+</head>
+<body>
+    <!-- La diferencia entre id y class se basa en dos caracteristicas principales:
+        - La importancia o jerarquía que le da el navegador a ambos
+        - Si el elemento es único o no
+
+    En el caso de los estilos css, el atributo id no es muy común usarlo pues este tiene otras aplicaciones que veremos mas adelantes, aún así se utiliza ocacionalmente para inyectar estilos siempre y cuando estos estilos no se aplique en en otros elementos HTML
+
+    Las clases se usan para replicar los estilos en múltiples etiquetas, es lo mas común y te encontrarás con esto a menudo en la mayoría de ejemplos y códigos de otras personas
+
+    ****AQUÍ SE CONTINUA EN CSS***
+
+    Para terminar, ten en cuenta que puedes combinar los atributos o aplicar múltiples clases a un mismo elemento.
+    Pero recuerda que si combinas id y class, los estilos del id tendrán prioridad
+    -->
+    <h1 id="titulo" class="videojuegos">Videojuegos</h1>
+    <h1 class="videojuegos fornite">Fornite</h1>
+    <h1 class="videojuegos pubg">PUBG</h1>
+    <h1 class="videojuegos cod">CD: Black Ops 4</h1>
+</body>
+</html>
