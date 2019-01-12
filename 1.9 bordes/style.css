@@ -1,0 +1,81 @@
+/* border-style: */
+/* Así como muchas otras reglas de css, los bordes tienen diferentes estilo que puedes usar a tu gusto, estos son:
+
+
+    - dotted - borde punteado
+    - dashed - borde en rayas
+    - solid - borde sólido
+    - double - doble linea
+    - groove - borde 3D que depende del color del borde. Profundo
+    - ridge - borde 3D que depende del color del borde. Salido
+    - inset - borde 3D que depende del color del borde. Undido
+    - outset - borde 3D que depende del color del borde. extraido
+    - none - sin borde
+    - hidden - escondido (la diferencia con el anterior es el espacio, aquí existe y en el anterior no)
+*/
+
+/* border-width: */
+/* Width significa ancho y como ya te puedes imaginar, especifica el ancho del borde según las medidas que tu uses:
+    - in
+    - px
+    - pt
+    - cm
+    - em
+    - rem
+*/
+
+/* border-color: */
+/* Simplemente elige el color en cualquier formato que sepas como:
+    - nombre
+    - Hex
+    - RGB
+    - rgba
+*/
+
+/* Lados individuales */
+/* Es posible cambiar todas las propiedades anteriores de manera individual, para esto solo debes agregar el nombre del lado despues de border- y antes de la propiedad específica:
+    -boder-left-color: red;
+    -border-top-style:
+
+*/
+
+/* versión simplificada */
+/* Simplemente usa la propiedad border: y pega los valores necesarios de manera combinada */
+
+
+/* border-radius */
+/* Puedes incluso redondear tus bordes a tu gusto por medio de las medidas */
+
+.borde1{
+    border-style: groove;
+}
+
+.borde2{
+    border-width: 10px;
+    border-style: solid;
+}
+
+.borde3{
+    border-style: inset;
+    border-color:crimson;
+}
+
+.borde4{
+    border-top: 7px solid blueviolet;
+    border-left: 19px dotted blue;
+}
+
+.borde5{
+    border:  6px dashed firebrick;
+}
+
+.borde6{
+    border-style: solid dashed;
+    border-color: goldenrod;
+}
+
+.borde7{
+    border: 5px solid teal;
+    border-radius: 50px;
+    padding-left: 8px;
+}
