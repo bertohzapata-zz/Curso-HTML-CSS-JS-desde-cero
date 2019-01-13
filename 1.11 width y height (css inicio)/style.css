@@ -1,0 +1,28 @@
+/*  Estas palabras significan ancho y alto, y tienen que ver con el espacio que le proporcionas a tus elementos HTML.
+Por defecto el navegador les asigna a todos tus elementos el valor auto, que es un cálculo que realiza el navegaor automáticamente.
+Así como en otras propiedades que tienen que ver con el tamaño en pantalla como son bordes y margenes, aquí también se trabajan con las mismas medidas:
+    - px
+    - em
+    - rem
+    - cm
+
+entre otros.
+*/
+
+/* width - height */
+/* Fíjate que igual que el valor auto, el navegador hace la conversión necesario, sin embargo al usar porcentajes tu decides, que tanto abarca tu elemento del total de espacio que tiene, solo una parte, la cual calcula el navegador*/
+
+/* max-width */
+/* Cono su nombre lo dice, indica el ancho máximo de un elemento y por lo tanto el ancho indicado no puede sobrepasar este valor, además si el contenido del elemento llegara a sobrepasar el ancho de la pantalla, con max-width el contenido sabe perfectamente que ya se pasó y se reajusta, de lo contrario desaparecería de la pantalla y se crearía un scroll horizontal poco profesional*/
+
+body{
+    margin: 0;
+}
+
+.contenedor {
+    /* width: 50%;
+    height: 200px; */
+    max-width: 500px;
+    height: 200px;
+    background: #f38181;
+}

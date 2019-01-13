@@ -1,0 +1,71 @@
+/* background-color */
+
+/* Esta propiedad es muy util porque permite crear ilusiones muy impresionantes y se complementan con estas propiedades:
+
+    - background-image: url()
+    - background-color:
+    - background-repeat:
+    - background-position:
+    - background-attachment:
+*/
+
+/* Indica con que color se iluminará el fondo de tu elemento html */
+
+/* background-image: url("tu_imagen")
+Podemos usar una imagen de fondo para un apartado de nuestro sitio. Toma en cuenta que la ruta de la imagen puede ser local o un enlace de internet*/
+
+
+/* background-repeat */
+/* Indica si el fondo se repite, puedes indicar la orientación:
+    - repeat-x: clona el fondo de manera horizontal
+    - repear-y : clona el fondo de manera vertical
+    - space: lo duplica con un espaciado
+    - no-repeat: sin repetir
+ */
+
+
+/* background-position */
+/* Puedes elegir una de las cuatro posiciones o combinar dos */
+
+
+/* background-attachment */
+/* Indica si el fondo se va a quedar pegado en algún lugar, lo mas común es dejarlo como está, es decir, sin usar esta propiedad o usarla con el valor fixed para crear un efecto visual bastante bueno sin usar tantas reglas de css*/
+
+
+/* Combinado */
+/* así como otras propiedades css, puedes combinar los valores en la misma linea para evitar escribir tanto y hacer muy extenso tu código */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.fondoColor{
+    background-color: #f5e4c3;
+}
+
+.header{
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+    padding: 1px;
+    /* background-image: url('https://img.freepik.com/free-vector/triangle-background-pattern_1319-107.jpg?size=338&ext=jpg');
+    background-repeat: repeat-x;
+    background-position: left top;
+    background-attachment: fixed; */
+    background: fixed repeat-x url('https://img.freepik.com/free-vector/triangle-background-pattern_1319-107.jpg?size=338&ext=jpg')
+}
+
+.brand {
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+h1{
+    font-size: 70px;
+}
+
+li{
+    font-size: 32px;
+}
