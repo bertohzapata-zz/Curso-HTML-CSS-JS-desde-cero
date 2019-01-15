@@ -10,23 +10,23 @@ body{
 .caja1 {
     margin: 20px;
     border: 5px solid #252a34;
-    padding: 20px;
+    padding: 100px;
     background: #6a2c70;
     color: #eaeaea;
 }
 
 .caja2 {
     margin: 20px;
-    border: 7px solid #3490de;
-    padding: 7px;
+    border: 12px dashed #3490de;
+    padding: 70px;
     background: #6639a6;
     color: #521262;
 }
 
 .caja3 {
-    margin: 10px;
-    border: 45px solid #ea5455;
-    padding: 2px;
+    margin: 20px;
+    border: 0px solid #ea5455;
+    padding: 20px;
     background: #f07b3f;
     color: #ffd460;
 }
