@@ -8,7 +8,7 @@ margin: 0;
      background: #002651;
      padding: 0px;
      display: flex;
-     justify-items: flex-end;
+     justify-content: space-around;
  }
 .nav-enlace {
     display: inline-block;
@@ -18,6 +18,34 @@ margin: 0;
     text-decoration: none;
 }
 
+
 .nav-enlace:hover {
     background: #FF304F;
+}
+
+.nav-boton {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-enlace {
+        margin: 10px 0px;
+    }
+
+    .nav-boton {
+        display: inline-block;
+        background: #002651;
+        color: #fff;
+        padding: 15px 0;
+        border: 2px solid #fff;
+    }
+
+    .desaparece {
+        display: none;
+    }
 }
