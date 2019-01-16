@@ -1,0 +1,26 @@
+
+.contenedor-outline1 {
+    background: sandybrown;
+    padding: 20px;
+    margin: 100px;
+    border: 2px solid firebrick;
+
+    outline-style: dashed;
+    outline-color: red;
+    outline-width: 10px;
+}
+
+input {
+    margin: 50px;
+    padding: 10px;
+    display: block;
+}
+
+input:focus{
+    background-color: yellowgreen;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 1px;
+}
+
+/* Como puedes notar, puedes sacarle partido a esta propiedad al saber que no vas a estropear el ancho de tu elemento HTML y por lo tanto comprometer tu layout. */
