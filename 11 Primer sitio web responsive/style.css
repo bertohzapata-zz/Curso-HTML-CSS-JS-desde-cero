@@ -1,0 +1,75 @@
+/* Flexbox funciona con contenedores padre */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    /* En el contenedor padre se utiliza la propiedad flex */
+    display: flex;
+
+    /* flex-direction indica hacia donde se guiarán los hijos, por default tiene row (de izquierda a derecha), tambien hay:
+    
+        - row (por defecto) (mas común usarlo en dimensiones de escritorio)
+        - column (es mas común al usarla en dimensiones de dispositivos moviles)
+        - column reverse (columna al revez)
+        - row reverse (fila al revez)
+    */
+    flex-direction: row;
+
+    /* flex-wrap especifica que tan flexibles se comportan dentro de su contenedor padre, si este contenedor padre no tiene la propiedad display: flex, flex-wrap no funciona */
+
+    /* Por defecto está en nowrap lo cual indica que no respetará algunas propiedades de los hijos como su ancho y tratará de dejarlo todo en la misma dirección que se indicó con la propiedad flex-direction.
+    Esto puede ocacionar que al tener multiples elementos hijos con la propiedad nowrap (sin envolver), los hijos salgan del espacio delimitado para el contenedor padre.
+    
+    Los valores que se manejan aquí son:
+        - nowrap: (por defecto) no trata de envolverlos dentro del padre si existen muchos elementos hijo, y modifica las propiedades de estos para tratar que todos entren en la dirección indicada (row-column) aunque en ocaciones no lo pueda logar (en pocas palabras, solo una fila o columna)
+        - wrap: respeta los valores de tamaño de los hijos y envuelve a estos en todo el contenedor padre creando otras columnas o filas dependiendo del valor de flex-direction. Sin embargo tratará de hacer todo lo posiible al usar las propiedades hijo para llenar el contenedor padre, si te exedes de elementos hijo ocurrirá lo mismo que con nowrap, no habrá espacio suficiente (en pocas palabras, varias filas o columnas para ocupar la mayor cantidad posible del espacio del padre)
+        - wrap-reverse: realiza el mismo proceso de wrap pero a la inversa
+    */
+    flex-wrap: wrap;
+
+    /* En realidad esta no es una propiedad exclusiva de flexbox pero le indica al padre el cómo justificar el contenido de sus elementos hijo, por lo tanto existen valores que utiliza flexbox como:
+        - flex-start: (por defecto) alinea los elementos hijo de izquierda a derecha, como normalmente están
+        - flex-end: alinea los elementos hijo de derecha a izquierda y los pega a la derecha
+        - center: los alinea al centro
+        - space-between: deja espacio entre elementos para que estén lo mas separados posibles ocupando el espacio total del padre, si hay varias filas y columnas trata de dejar los elementos primero a los costados
+        - space-around: también separa los elementos pero no de manera tan agresiva como space-between, y en este caso los deja mas centrados y un poco mas juntos. Si hay varias filas y columnas trata de dejar los elementos primero en el centro y despues dispersarlos
+    */
+    justify-content: space-around;
+
+    /* align-items */
+    /* De la misma forma que justify-content organiza los elemtnos en base al ancho del padre, align-item organiza a los hijos en base a la altura del padre, sus valores son:
+        - flex-start: (poor default) los posiciona en lo mas alto posible del padre
+        - flex- end: los posiciona abajo del contenedor padre, lo mas posible
+        - center: los deja justo en medio del alto del padre
+        (con align-items: center y justify-content: center  tienes un centrado perfecto en alto y ancho)
+        - stretch: esta propiedad es especial porque al QUITAR el alto de los elementos hijos y seleccionar este valor, los elementos hijo tomaran el alto del padre
+        - baseline: centra el elemento hijo dependiendo del tamaño del contenido (sea imagen o texto), esto puede desalinear tus elementos si añades con otra clase un tamaño de fuente distinto al que has usado regularmente */
+    align-items: center;
+
+    /* align-content funciona sola o convinada con todo lo anterior pero esta trabaja cuando hay mas de una fila o columna y posiciona los elementos de multiples filas o columnas de la misma forma que con align-items, es decir en base a la altura del padre. Sus valores son:
+        - flex-start
+        - flex-end
+        - center
+        - space-between: las filas o columnas trata de ponerlas primero a los extremos y si hay mas elemetnos los centra y los separa lo mas posible
+        - space-around: primero junta las filas o columnas en el centro de la altura y si hay mas elementos los va acercando a las orillas */
+    align-content: center;
+}
+
+.hijo {
+    background: #00B285;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;    
+}
