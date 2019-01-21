@@ -8,7 +8,8 @@
 
 .contenedor {
     width: 80%;
-    height: 500px;
+    /* comentado para practicar con los elementos hijo de manera dinámica */
+    /* height: 500px; */
     background: #FF5C29;
     margin: 50px auto;
     /* En el contenedor padre se utiliza la propiedad flex */
@@ -42,7 +43,7 @@
         - space-between: deja espacio entre elementos para que estén lo mas separados posibles ocupando el espacio total del padre, si hay varias filas y columnas trata de dejar los elementos primero a los costados
         - space-around: también separa los elementos pero no de manera tan agresiva como space-between, y en este caso los deja mas centrados y un poco mas juntos. Si hay varias filas y columnas trata de dejar los elementos primero en el centro y despues dispersarlos
     */
-    justify-content: space-around;
+    justify-content: center;
 
     /* align-items */
     /* De la misma forma que justify-content organiza los elemtnos en base al ancho del padre, align-item organiza a los hijos en base a la altura del padre, sus valores son:
@@ -51,8 +52,8 @@
         - center: los deja justo en medio del alto del padre
         (con align-items: center y justify-content: center  tienes un centrado perfecto en alto y ancho)
         - stretch: esta propiedad es especial porque al QUITAR el alto de los elementos hijos y seleccionar este valor, los elementos hijo tomaran el alto del padre
-        - baseline: centra el elemento hijo dependiendo del tamaño del contenido (sea imagen o texto), esto puede desalinear tus elementos si añades con otra clase un tamaño de fuente distinto al que has usado regularmente */
-    align-items: center;
+        - baseline: centra el elemento hijo dependiendo del tamaño del contenido (sea imagen o letras), esto puede desalinear tus elementos si añades con otra clase un tamaño de fuente distinto al que has usado regularmente */
+    align-items: flex-start;
 
     /* align-content funciona sola o convinada con todo lo anterior pero esta trabaja cuando hay mas de una fila o columna y posiciona los elementos de multiples filas o columnas de la misma forma que con align-items, es decir en base a la altura del padre. Sus valores son:
         - flex-start
@@ -71,5 +72,23 @@
     margin: 30px;
     padding: 20px;
     font-size: 40px;
-    text-align: center;    
+    text-align: center;
+
+    /* Esta propiedad indica que tanto el elemento hijo va a crecer con relacion al resto de los elementos hijo, tratando de ocupar el mayor espacio posible del padre sin afectar a los demás hijos (tamaños 1-8)*/
+    /* flex-grow: 8; */
+
+    /* Restringe el ancho mínimo del elemento hijo para que si o si use el  ancho que se indicó con la propiedad width   (0: respeta/ 1: automático dependiendo del padre*/
+    /* flex-shrink: 0; */
+
+    /* Versión simplificada, quiere decir que el flex-grow va a ser 1 y flex-shrink 1 también, de esta manera todo crecera y se acomodará de manera automática al padre en cualquier dispositivo */
+    flex: 1 1 auto;
+
+    /* Indica el orden de prioridad que le das a tus elementos,  */
+    order: 1;
+
+    
+}
+
+.prioridadMayor {
+    order: 0;
 }

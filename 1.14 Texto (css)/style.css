@@ -1,0 +1,61 @@
+/* color:  */
+/* Para comenzar, la propiedad mas sencilla y mas usada es color. Es tan común que incluso no tiene un nombre como "text-color", parecido a otras propiedades de css. Simplemente la propiedad color indica el color del texto, así de simple, solo ten cuidado de que tu texto sea visible, de lo contrario solo cambia el color de fondo*/
+
+/* text-align:  */
+/* Los valores de esta propiedad indican si el contenido se alinea a la derecha, izquierda, en el centro o justificado como en los periodicos o revistas */
+
+/* text-decoration: */
+/* Indica la decoración que tendrá tu texto, el títulos y parrados tiene la propiedad none pero por default, la etiquta "a" tiene una que comunmente se retira para que tus enclaces no se vean feos, existen muchos valores para esta propiedad, no todos se usan pero si quieres un sitio que su base de contenido sea el texto, te conviene aprenderlas muy bien. Ya te digo, no son para nada complicadas, simplemente no siempre se usan todas, incluso casi siemper se quitan. Esta propiedad como muchas otras tiene sub-propiedades que puedes aplicar con su versión simplificada. Te recomiendo usar las ayudas de tu editor de texto para conocer todo lo que puedes lograr. */
+
+/* text-transform: */
+/* Esta propiedad si que te va a ser util cuando obtengas el texto de un lugar donde tenga un formato no apto para presentarse. Por ejemplo cuando obtienes tu información en texto desde una base de datos. Puedes arreglar el texto a tu conveniencia */
+
+/* text-indent */
+/* Te da un espacio en la primera linea, comunmente usada en párrafos */
+
+/* letter-spacing: */
+/* Como su nombre indica, es el tamaño de espaciado entre letra y letra, puedes alejarlas o incluso pagarlas con un valor en negativo */
+
+/* Line Height */
+/* Indica el espacio entre linea y linea de tu párrafo, puedes usar medidas como pixeles, rem, em o su propia medida, su valor base es 1 */
+
+/* text-direction */
+/* Se usa para indicar en qué dirección se dibujará el texto, Vas a continuar leyendo de izquierda a derecha pero el contenido usará los valores indicados de otras propiedades y los usará para el sentido que indiques aquí (ltr o rtl)*/
+
+/* word-spacing */
+/* Lo mismo que con letter-spacing pero aquí con la separación de palabra por palabra */
+
+/* text-shadow */
+/* Indica una sombra con tres valores, el color horizontal, luego el vertical y al final el color de la sombra, obviamente puedes indicar los valores en negativo o positivo y un color en hexadecimal o rgb, o mejor en rgba. Ten en cuenta que va a copiar tu texto tal cual esté y lo va a duplicar atrás con la separación que le indiques, es decir, si tu texto tiene cosas raras, esas cosas raras también se copian */
+.titulo1 {
+    color: crimson;
+    text-align: center;
+    text-decoration: underline crimson;
+    text-transform: capitalize;
+    text-shadow: 2px 2px rgba(50, 36, 36, 0.5);
+}
+
+.titulo2 {
+    color: #1aa59a;
+    text-align: left;
+    text-decoration: line-through;
+    text-transform: lowercase;
+    text-shadow: -3px -3px #1aa59a;
+}
+
+.titulo3 {
+    color: rgb(27, 90, 122);
+    text-align: right;
+    text-decoration: overline;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(54, 60, 63, 0.5);
+}
+
+.parrafo5 {
+    text-align: justify;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    line-height: 1;
+    direction: rtl;
+    word-spacing: 10px;
+}
