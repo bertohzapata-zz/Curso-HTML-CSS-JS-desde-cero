@@ -1,0 +1,61 @@
+/* font-family: */
+/* Esta propiedad indica la fuente específica que vas a usar. Puedes indicar múltiples fuentes separadas con una coma, esto porque si el navegador no tiene acceso a la primera fuente, tratará de obtener la que sigue.
+
+Si el nombre de la fuente tiene mas de una palabra, se encierra en comillas
+*/
+* {
+    font-family: Tahoma, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+p {
+    /* font-style */
+    /* Indica el estilo de la fuente, como si es italica o normal */
+    font-style: italic;
+    font-weight: normal;
+    text-indent: 70px;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.texto1 {
+    text-align: center;
+    /* font-size: */
+    /* Indica el tamaño del texto en una medida específica.
+    Te recomiendo no cambiar el tamaño de los headings para parecer parrafos y viceverza.
+
+    Este es un puento importante para comenzar a investigar acerca de los tipos de medidas pues aquí es uno de los usos y se nota ampliamente la diferencia entre todas.
+
+    Se puede configurar el tamaño de manera absoluta o relativa:
+    Absoluta:
+        - tiene un tamaño específico
+        - Al usuario final o cliente no se le permite modificar el tamaño en todos los dispositivos y navegadores
+    
+    Relativa:
+        - modifica el tamaño de manera relatica a los elementos adyacentes
+        - permite al usuario modificar el tamaño
+
+    Toma en cuenta que si no especificas tamaño, el navegador indicará los parrafos a 16 px, lo cual es equivalente a 1em
+
+
+    Pixeles contra em
+    si usas px puedes tener control total de la pantalla y puedes usar el zoom normal. Por otro lado es recomendable por la W3C usar em para el texto pues funciona mejor el reacondicionamiento de elementos de texto en dispositivos móviles. Solo ten en cuenta la fórmula
+    1em === 16px | pixels/16 = em
+
+    También puedes usar porcentajes 
+    */
+    /* font-size: 70px; */
+    font-size: 4.36em;
+
+    /* font-weight */
+    /* Indica el peso o engordamiento de la leta, el tipico bold o normal */
+    font-style: normal;
+
+    /* font-variant */
+    /* Existen normal, tal cual funciona y small-caps que conviente todas las minúsculas a mayúsculas pero con el tamaño, de la fuente para letras minúsculas */
+    font-variant: small-caps;
+    font-weight: normal;
+}
